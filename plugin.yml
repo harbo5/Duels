@@ -1,0 +1,9 @@
+name: EmenbeeDuels
+version: 1.1
+main: org.apollodevs.duels.EmenbeeDuels
+author: Harbo5fil
+commands:
+   duel:
+      description: Duel.
+   queue:
+      description: Queue.

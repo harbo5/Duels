@@ -1,0 +1,28 @@
+help:
+- "No idea what to write here"
+- "That's why I made it configureable"
+- "lol"
+
+placeholder:
+  spawn1: placeholder
+  spawn2: placeholder
+  world: world
+
+minBet: 10
+maxBet: 100
+pickUpLoot: 5
+countDown: 10
+
+kits-inventory:
+  title: "&4Kits GUI"
+  rows: 4
+  items:
+    dtools:
+      slot: 1
+      item: STAINED_GLASS_PANE:14
+      amount: 1
+      name: "&cFirst Kit"
+      lore:
+      - 'Lore 1'
+      - 'Lore 2'
+      - 'Lore 3'
