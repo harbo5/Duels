@@ -154,6 +154,7 @@ public class Duel {
             if (!inv.isEmpty() && !armor.isEmpty()) {
                 if (check.isOnline()) {
                     winner.setItemOnCursor(null);
+                    winner.getOpenInventory().getTopInventory().clear();
                     winner.getInventory().clear();
                     winner.getInventory().setArmorContents(null);
 
@@ -170,6 +171,7 @@ public class Duel {
             }
         } else if (check.isOnline() && loser.isOnline()) {
             player1.setItemOnCursor(null);
+            winner.getOpenInventory().getTopInventory().clear();
             player1.getInventory().clear();
             player1.getInventory().setArmorContents(null);
 
@@ -181,6 +183,7 @@ public class Duel {
             // hashmaps
             armor.remove(player1.getName());
             player2.setItemOnCursor(null);
+            winner.getOpenInventory().getTopInventory().clear();
             player2.getInventory().clear();
             player2.getInventory().setArmorContents(null);
 
@@ -193,6 +196,7 @@ public class Duel {
             armor.remove(player2.getName());
         } else if (check.isOnline()) {
             winner.setItemOnCursor(null);
+            winner.getOpenInventory().getTopInventory().clear();
             winner.getInventory().clear();
             winner.getInventory().setArmorContents(null);
 
@@ -207,6 +211,7 @@ public class Duel {
         } else if (loser.isOnline()) {
             Player player = Bukkit.getPlayer(loser.getUniqueId());
             player.setItemOnCursor(null);
+            winner.getOpenInventory().getTopInventory().clear();
             player.getInventory().clear();
             player.getInventory().setArmorContents(null);
 

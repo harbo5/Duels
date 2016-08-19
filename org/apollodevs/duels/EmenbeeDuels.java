@@ -569,6 +569,9 @@ public class EmenbeeDuels extends JavaPlugin implements Listener {
                     + event.getPlayer().getName() + " logged out!");
 
         }
+        if(pendingDuels.containsKey(event.getPlayer().getUniqueId().toString())){
+            pendingDuels.remove(event.getPlayer().getUniqueId().toString());
+        }
 
     }
 
